@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Router Whisperer - Projects</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+padding-bottom:50px;
+}
+
+header{
+background:#020617;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1e293b;
+}
+
+header h1{
+color:#38bdf8;
+font-size:1.8rem;
+}
+
+nav a{
+color:#e2e8f0;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:25px;
+color:#38bdf8;
+border-bottom:1px solid #1e293b;
+padding-bottom:5px;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.project-card{
+background:#020617;
+padding:30px;
+border-radius:10px;
+border:1px solid #1e293b;
+transition:0.3s;
+display:flex;
+flex-direction:column;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
+background:#0f172a;
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:15px;
+font-size:1.3rem;
+}
+
+.project-card p{
+margin-bottom:12px;
+color:#cbd5f5;
+flex-grow:1;
+}
+
+.tech-stack{
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.tech-tag{
+background:#1e293b;
+color:#38bdf8;
+padding:5px 12px;
+border-radius:15px;
+font-size:0.85rem;
+border:1px solid #38bdf8;
+}
+
+.status{
+margin-top:15px;
+padding-top:15px;
+border-top:1px solid #1e293b;
+font-size:0.9rem;
+}
+
+.status-badge{
+display:inline-block;
+padding:4px 12px;
+border-radius:20px;
+font-weight:bold;
+}
+
+.status-completed{
+background:#10b981;
+color:#000;
+}
+
+.status-active{
+background:#f59e0b;
+color:#000;
+}
+
+.footer-link{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.footer-link:hover{
+text-decoration:underline;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+border-top:1px solid #1e293b;
+margin-top:40px;
+color:#64748b;
+}
+
+.highlight{
+color:#38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>The Router Whisperer</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+</nav>
+</header>
+
+<section>
+<h2 class="section-title">Network Automation Projects</h2>
+<p style="color:#cbd5f5; margin-bottom:20px;">
+A collection of Python and JavaScript-based tools designed to automate network operations,
+simplify device management, and enhance infrastructure reliability. Each project demonstrates
+real-world problem-solving in enterprise network engineering.
+</p>
+</section>
+
+<section>
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>Automated Network Device Validation</h3>
+<p>
+A comprehensive Python-based automation tool that validates standardized configurations across
+network devices using SSH. This utility ensures compliance with organizational standards by
+comparing running configurations against expected templates, detecting deviations, and reporting
+inconsistencies before they cause operational issues.
+</p>
+<p><strong>Key Features:</strong></p>
+<ul style="margin-left:15px;">
+<li>Parallel SSH validation of multiple devices</li>
+<li>Configuration compliance reporting</li>
+<li>Automated deviation alerts</li>
+<li>Detailed audit logs</li>
+</ul>
+<div class="tech-stack">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">netmiko</span>
+<span class="tech-tag">paramiko</span>
+</div>
+<div class="status">
+<span class="status-badge status-completed">Completed</span>
+</div>
+</div>
+
+<div class="project-card">
+<h3>Automated Network Discovery with Recursion</h3>
+<p>
+An intelligent network topology visualization tool that recursively discovers network devices
+and their relationships using industry-standard discovery protocols. Generates dynamic topology
+maps showing device interconnections, interface relationships, and multi-level network structure
+across complex enterprise environments.
+</p>
+<p><strong>Key Features:</strong></p>
+<ul style="margin-left:15px;">
+<li>Recursive device discovery (CDP & LLDP)</li>
+<li>Dynamic topology mapping</li>
+<li>Interface relationship tracking</li>
+<li>Multi-hop network visualization</li>
+</ul>
+<div class="tech-stack">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">netmiko</span>
+<span class="tech-tag">paramiko</span>
+</div>
+<div class="status">
+<span class="status-badge status-completed">Completed</span>
+</div>
+</div>
+
+<div class="project-card">
+<h3>Device Script Generator</h3>
+<p>
+A powerful configuration generation system that dynamically creates device provisioning scripts
+based on predefined templates and deployment parameters. Leverages Python and VBA to standardize
+the provisioning process, reduce manual configuration errors, and accelerate network device
+rollouts at scale.
+</p>
+<p><strong>Key Features:</strong></p>
+<ul style="margin-left:15px;">
+<li>Template-based configuration generation</li>
+<li>Parameter-driven customization</li>
+<li>Bulk device provisioning</li>
+<li>Error checking and validation</li>
+<li>Multi-format support (CLI scripts, JSON)</li>
+</ul>
+<div class="tech-stack">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">VBA</span>
+<span class="tech-tag">pandas</span>
+<span class="tech-tag">CSV</span>
+<span class="tech-tag">netmiko</span>
+</div>
+<div class="status">
+<span class="status-badge status-completed">Completed</span>
+</div>
+</div>
+
+<div class="project-card">
+<h3>SNMP to Layman Interpreter</h3>
+<p>
+An advanced data interpretation utility that translates raw SNMP telemetry into clear, actionable
+insights. Converts complex OIDs and numerical metrics into human-readable explanations, enabling
+network operators and non-technical stakeholders to quickly understand device health and
+performance without requiring SNMP expertise.
+</p>
+<p><strong>Key Features:</strong></p>
+<ul style="margin-left:15px;">
+<li>SNMP OID translation to plain English</li>
+<li>Metric interpretation and alerts</li>
+<li>Performance trend analysis</li>
+<li>Device health scoring</li>
+<li>Stakeholder-friendly reporting</li>
+</ul>
+<div class="tech-stack">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">SNMP</span>
+<span class="tech-tag">Data Interpretation</span>
+<span class="tech-tag">Reporting</span>
+</div>
+<div class="status">
+<span class="status-badge status-active">Active Development</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 The Router Whisperer | Network Automation Portfolio</p>
+<p style="margin-top:10px;"><a href="https://github.com/TheRouterWhisperer" class="footer-link">GitHub Repository</a></p>
+</footer>
+
+</body>
+</html>
