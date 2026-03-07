@@ -1,136 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Network Scrub</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f7fa;
-      color: #333;
-    }
-    header {
-      background: #0d47a1;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    nav {
-      background: #1565c0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 2rem auto;
-    }
-    h2 {
-      margin-top: 2rem;
-      border-bottom: 2px solid #0d47a1;
-      padding-bottom: 0.5rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #0d47a1;
-    }
-    footer {
-      background: #0d47a1;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Router Whisperer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
+
+header{
+background:#020617;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1e293b;
+}
+
+header h1{
+color:#38bdf8;
+}
+
+nav a{
+color:#e2e8f0;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h2{
+font-size:3rem;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+font-size:1.2rem;
+color:#94a3b8;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+max-width:800px;
+color:#cbd5f5;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#020617;
+padding:25px;
+border-radius:10px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:10px 18px;
+border-radius:20px;
+font-size:0.9rem;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+border-top:1px solid #1e293b;
+margin-top:40px;
+color:#64748b;
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Network Engineering Projects</h1>
-    <p>Learning, Building, and Sharing Networking Solutions</p>
-  </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#tools">Tools</a>
-    <a href="#resources">Resources</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+<h1>The Router Whisperer</h1>
 
-  <div class="container" id="home">
-    <h2>Welcome</h2>
-    <p>
-      This site is dedicated to network engineers, students, and hobbyists who want to learn and 
-      explore different networking concepts, tools, and projects. Here, you’ll find practical 
-      examples, hands-on labs, and useful resources.
-    </p>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <h2 id="projects">Sample Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>VLAN Segmentation</h3>
-        <p>Learn how to configure VLANs on Cisco switches to improve security and efficiency.</p>
-      </div>
-      <div class="card">
-        <h3>Ping Sweep Tool</h3>
-        <p>Build a Python-based ICMP ping sweep program to discover active devices in a subnet.</p>
-      </div>
-      <div class="card">
-        <h3>Bandwidth Monitoring</h3>
-        <p>Set up SNMP monitoring with Grafana to visualize network traffic and bandwidth usage.</p>
-      </div>
-      <div class="card">
-        <h3>Firewall Rules</h3>
-        <p>Practice designing and implementing firewall rules to secure inbound and outbound traffic.</p>
-      </div>
-    </div>
+<section class="hero">
+<h2>Automating Networks. Architecting Reliability.</h2>
+<p>
+Welcome to The Router Whisperer — a portfolio dedicated to network automation,
+infrastructure engineering, and scalable architecture design.
+From scripting router deployments to building resilient network topologies.
+</p>
+</section>
 
-    <h2 id="tools">Tools</h2>
-    <ul>
-      <li>Wireshark - Packet analysis</li>
-      <li>GNS3 / EVE-NG - Network simulation</li>
-      <li>nmap - Security scanning</li>
-      <li>iperf - Bandwidth testing</li>
-    </ul>
+<section id="about">
+<h2 class="section-title">About</h2>
+<div class="about">
+<p>
+The Router Whisperer is a collection of network engineering projects focused on
+automation, scalability, and modern infrastructure design.
+This portfolio demonstrates solutions built using tools like Python,
+Ansible, REST APIs, and infrastructure-as-code to automate networking tasks
+and deploy enterprise-grade architectures.
+</p>
+</div>
+</section>
 
-    <h2 id="resources">Resources</h2>
-    <p>
-      <a href="https://www.cisco.com/" target="_blank">Cisco Networking</a><br>
-      <a href="https://www.wireshark.org/" target="_blank">Wireshark Docs</a><br>
-      <a href="https://nmap.org/book/" target="_blank">Nmap Guide</a><br>
-    </p>
-  </div>
+<section id="projects">
+<h2 class="section-title">Projects</h2>
 
-  <footer>
-    <p>© 2025 Network Engineering Projects. Built for learning and sharing.</p>
-  </footer>
+<div class="projects">
+
+<div class="project-card">
+<h3>Automated Router Configuration</h3>
+<p>
+Python-based automation tool that pushes standardized configurations
+to routers using SSH and API integrations.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Network Health Monitoring</h3>
+<p>
+Automated monitoring pipeline collecting SNMP and telemetry data
+to track network health and performance.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Infrastructure as Code Lab</h3>
+<p>
+Network deployment environment using Ansible and GitOps
+to manage switches, routers, and firewalls.
+</p>
+</div>
+
+<div class="project-card">
+<h3>High Availability Architecture</h3>
+<p>
+Enterprise network topology with redundancy,
+failover routing, and load balancing.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Network Automation</div>
+<div class="skill">Python</div>
+<div class="skill">Ansible</div>
+<div class="skill">REST APIs</div>
+<div class="skill">Cisco IOS</div>
+<div class="skill">BGP</div>
+<div class="skill">OSPF</div>
+<div class="skill">Terraform</div>
+<div class="skill">Linux</div>
+<div class="skill">Network Architecture</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+<p>Interested in collaborating or discussing network architecture or network automation?</p>
+<br>
+<p>Email: scottroyce7@gmail.com</p>
+<p>GitHub: github.com/TheRouterWhisperer</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 The Router Whisperer | Network Automation Portfolio</p>
+</footer>
+
 </body>
 </html>
