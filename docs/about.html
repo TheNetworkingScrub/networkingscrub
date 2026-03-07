@@ -4,94 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Router Whisperer - Resume</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#0f172a;
-color:#e2e8f0;
-line-height:1.6;
-padding-bottom:50px;
-}
-
-header{
-background:#020617;
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #1e293b;
-}
-
-header h1{
-color:#38bdf8;
-font-size:1.8rem;
-}
-
-nav a{
-color:#e2e8f0;
-margin-left:20px;
-text-decoration:none;
-font-weight:500;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-section{
-padding:60px 10%;
-}
-
-.section-title{
-font-size:2rem;
-margin-bottom:25px;
-color:#38bdf8;
-border-bottom:1px solid #1e293b;
-padding-bottom:5px;
-}
-
-h3{
-color:#38bdf8;
-margin-bottom:8px;
-}
-
-.resume-section{
-margin-bottom:40px;
-}
-
-ul{
-margin-left:20px;
-margin-top:10px;
-}
-
-li{
-margin-bottom:6px;
-}
-
-.contact-info p{
-margin-bottom:5px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-border-top:1px solid #1e293b;
-margin-top:40px;
-color:#64748b;
-}
-
-.highlight{
-color:#38bdf8;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -106,14 +19,21 @@ color:#38bdf8;
 </header>
 
 <section>
-<h2 class="section-title">Professional Overview</h2>
 <div class="resume-section">
+<div class="profile-header">
+<h2 class="profile-name">Scott Royce Fernandez</h2>
+<div class="expertise-tags">
+<span class="expertise-tag">Network Design & Architecture</span>
+<span class="expertise-tag">Network Consulting Engineer</span>
+<span class="expertise-tag">Network Automation</span>
+<span class="expertise-tag">Cisco SD-WAN</span>
+</div>
+</div>
 <p>
 Experienced <strong class="highlight">Network Consulting Engineer</strong> with a CCNP and a degree in Electronics & Communications Engineering,
 driving impactful results and nurturing effective collaboration.
 Supported Fortune Global 500 companies and worked across mid- to large-scale enterprise networks,
-particularly in the telecommunications and healthcare industries. Looking forward to bringing my experience and
-skills to your team and contributing to meaningful growth.
+particularly in the telecommunications and healthcare industries.
 </p>
 </div>
 </section>
@@ -121,8 +41,16 @@ skills to your team and contributing to meaningful growth.
 <section>
 <h2 class="section-title">Professional Experience</h2>
 
-<div class="resume-section">
-<h3>Optum Global Solutions Philippines, Inc. - Network Consultant <span class="highlight">Mar 2022 - Present</span></h3>
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<h3>Network Consultant</h3>
+<p class="company-name">Optum Global Solutions Philippines, Inc.</p>
+<p class="timeline-date">Mar 2022 - Present</p>
+</div>
 <ul>
 <li>Served as a resource for Remote Site Engineering (RSE) and Mergers & Acquisitions (M&A) teams.</li>
 <li>Provided after-hours escalation & war room support; served as Level 3/4 escalation engineer for medium to high-severity issues.</li>
@@ -135,34 +63,58 @@ skills to your team and contributing to meaningful growth.
 <li><strong>Key Achievements:</strong> Led migration of large Nevada-based data centers to SD-WAN with minimal downtime; participated in major SD-WAN deployments for mergers and disaster recovery sites.</li>
 </ul>
 </div>
+</div>
 
-<div class="resume-section">
-<h3>NTT Global Networks, Inc. - Senior Network Operations Engineer <span class="highlight">Oct 2021 - Feb 2022</span></h3>
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<h3>Senior Network Design & Implementation Engineer</h3>
+<p class="company-name">Accenture, Inc.</p>
+<p class="timeline-date">May 2019 - Sep 2021</p>
+</div>
+<ul>
+<li>Supported Global Solutions Design & Engineering (GSDE) and Lifecycle Architecture & Engineering (LCE) teams for Verizon Business.</li>
+<li>Level 4 Network Engineer executing design, implementation, and testing on customer networks.</li>
+<li>Performed WAN, LAN, WLAN, and SD-WAN site activations, migrations, and integrations.</li>
+<li>Trained and mentored junior engineers; served as escalation point for complex issues.</li>
+<li><strong>Key Achievements:</strong> Awarded "Best in Network Implementation," promoted twice, led multiple SD-WAN migration projects for high-profile clients.</li>
+</ul>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<h3>Senior Network Operations Engineer</h3>
+<p class="company-name">NTT Global Networks, Inc.</p>
+<p class="timeline-date">Oct 2021 - Feb 2022</p>
+</div>
 <ul>
 <li>Tier 2 Network Engineer delivering client network services, solutions, and support for complex issues.</li>
 <li>Proactive and reactive incident and change management for enterprise customers.</li>
 <li>Performed software and hardware maintenance for all managed network appliances.</li>
 </ul>
 </div>
+</div>
 
-<div class="resume-section">
-<h3>ESCO Unified Solutions Inc. - Technical Engineer <span class="highlight">Jun 2018 - Dec 2018</span></h3>
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<h3>Technical Engineer</h3>
+<p class="company-name">ESCO Unified Solutions Inc.</p>
+<p class="timeline-date">Jun 2018 - Dec 2018</p>
+</div>
 <ul>
 <li>Implemented IT systems and infrastructure including AV equipment, IP phones, IP cameras.</li>
 <li>Performed technical site support, diagnostics, and maintenance for customer premises.</li>
 <li><strong>Key Achievement:</strong> Completed branch IT infrastructure deployment months ahead of schedule.</li>
 </ul>
 </div>
+</div>
 
-<div class="resume-section">
-<h3>Accenture, Inc. - Senior Network Design & Implementation Engineer <span class="highlight">May 2019 - Sep 2021</span></h3>
-<ul>
-<li>Supported Global Solutions Design & Engineering (GSDE) and Lifecycle Architecture & Engineering (LCE) teams for Verizon Business.</li>
-<li>Level 4 Network Engineer executing design, implementation, and testing on customer networks.</li>
-<li>Performed WAN, LAN, WLAN, and SD-WAN site activations, migrations, and integrations.</li>
-<li>Trained and mentored junior engineers; served as escalation point for complex issues.</li>
-<li><strong>Key Achievements:</strong> Awarded “Best in Network Implementation,” promoted twice, led multiple SD-WAN migration projects for high-profile clients.</li>
-</ul>
 </div>
 
 </section>
